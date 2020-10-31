@@ -2,6 +2,29 @@
 
 **Repository Updated on 10/31/2020**
 
+## References
+
+**1. Udacity**
+
+This project (and the dataset) comes from one of the projects in Udacity's NLP Nanodegree course I took in Septenmber, 2020.
+
+**2. Transformer tutorial**
+
+I learned the transformer implementation from the tutorial notebook below:
+
+https://www.tensorflow.org/tutorials/text/transformer
+
+**3. BERT**
+
+I'm learning how to build a BERT model:
+
+https://www.tensorflow.org/official_models/fine_tuning_bert
+
+
+## The Project
+
+The goal of this project is to use deep neural network architectures to translate English sentences into French.
+
 ## The Dataset
 
 This project uses the dataset provided by [Udacity's NLP Nanodegree Course](https://www.udacity.com/course/natural-language-processing-nanodegree--nd892). The dataset is a subset extracted from the [WMT](http://www.statmt.org/) dataset. It contains 137,861 English sentences and their translations in French.
