@@ -110,7 +110,7 @@ class EncoderDecoder(tf.keras.layers.Layer):
 | Training Acc | 98.7% | ----------- | ----------- |
 | Validation Acc | 93.2% | ----------- | ----------- |
 | Test Acc | --- | ----------- | ----------- |
-| Test BLEU| --- | ----------- | ----------- |
+| Test BLEU| 0.955 | ----------- | ----------- |
 
 
 ## Conclusion
