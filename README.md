@@ -17,6 +17,23 @@ I splitted the datasets (137,861 sentence pairs) into:
 - validation dataset of 7,861 sentences, and
 - test dataset of 10,000 sentences
 
+### Tokenization
+I used [SubwordTextEncoder](https://www.tensorflow.org/datasets/api_docs/python/tfds/deprecated/text/SubwordTextEncoder) to tokenize the English and French sentences in the training data.
+
+The tokenizer tokenizes the word into tokens between 1 (inclusuce) and `vocab_size` (exclusive). If the tokenizer encounters a word (from the validation or test data) it hasn't seen, it'll tokenize the word by its subwords.
+
+**Update** This tokenizer method has been deprecated, which can still be called by importing from `tfds.deprecated.text.SubwordTextEncoder`
+
+``` python3
+## Subword Tokenizer
+english_tokenizer = tfds.deprecated.text.SubwordTextEncoder.build_from_corpus((eng.numpy() for eng, fr in train_dataset), target_vocab_size = 2**13)
+french_tokenizer = tfds.deprecated.text.SubwordTextEncoder.build_from_corpus((fr.numpy() for eng, fr in train_dataset), target_vocab_size = 2**13)
+
+## Vocabulary size (+2 for start and end)
+input_vocab_size = english_tokenizer.vocab_size + 2
+output_vocab_size = french_tokenizer.vocab_size + 2
+```
+
 ## Models
 
 This project uses different models to tackle the problems:
