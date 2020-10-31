@@ -14,14 +14,17 @@ Most of the notebook was run on Google Colaboratory. To run the notebooks in thi
 I splitted the datasets (137,861 sentence pairs) into:
 
 - training dataset of 120,000 sentences,
-
 - validation dataset of 7,861 sentences, and
-
 - test dataset of 10,000 sentences
 
 ## Models
 
 This project uses different models to tackle the problems:
+
+| File Name | Model Description |
+| ----------- | ----------- |
+| EncoderDecoder_English_French_translator_colab.ipynb | Deep RNN (GRUs or LSTMs) |
+| Transformer_English_French_translator_colab.ipynb.ipynb | [Transformer (Google)](https://arxiv.org/abs/1706.03762) |
 
 #### Encoder-Decoder Architecture (with bidirectional GRU or LSTM layers)
 
