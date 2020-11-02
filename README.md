@@ -107,10 +107,10 @@ class EncoderDecoder(tf.keras.layers.Layer):
 | Metric | EncoderDecoder (biGRU) | EncoderDecoder (biLSTM) | Transformer | 
 | ----------- | ----------- | ----------- | ----------- |
 | Epochs | 20 | 20 | ----------- | ----------- |
-| Training Acc | 98.7% | 99.2% | ----------- |
-| Validation Acc | 93.2% | 93.8% | ----------- |
-| Test Acc | 98.1% | 98.2% | ----------- |
-| Test BLEU| 0.955 | 0.960 | ----------- |
+| Training Acc | 98.7% | 99.1% | ----------- |
+| Validation Acc | 93.2% | 98.0% | ----------- |
+| Test Acc | 98.1% | 99.9% | ----------- |
+| Test BLEU| 0.955 | 0.962 | ----------- |
 
 
 ## Conclusion
