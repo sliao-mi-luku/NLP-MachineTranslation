@@ -1,6 +1,6 @@
 # NLP-MachineTranslation
 
-**Repository updated on 11/01/2020**
+**Repository updated on 11/02/2020**
 
 ## References
 
@@ -106,11 +106,11 @@ class EncoderDecoder(tf.keras.layers.Layer):
 
 | Metric | EncoderDecoder (biGRU) | EncoderDecoder (biLSTM) | Transformer | 
 | ----------- | ----------- | ----------- | ----------- |
-| Epochs | 20 | 20 | ----------- | ----------- |
-| Training Acc | 98.7% | 99.1% | ----------- |
-| Validation Acc | 97.9% | 98.0% | ----------- |
-| Test Acc | 99.4% | 99.9% | ----------- |
-| Test BLEU| 0.954 | 0.962 | ----------- |
+| Epochs | 20 | 20 | 20 | ----------- |
+| Training Acc | 98.7% | 99.1% | 72.0% | ----------- |
+| Validation Acc | 97.9% | 98.0% | 71.6% | ----------- |
+| Test Acc | 99.4% | 99.9% | ----------- | ----------- |
+| Test BLEU| 0.954 | 0.962 | ----------- | ----------- |
 
 
 ## Conclusion
